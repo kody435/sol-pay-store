@@ -8,7 +8,6 @@ export default function handler(req, res) {
       const { hash, filename, ...rest } = product;
       return rest;
     });
-
     res.status(200).json(productsNoHashes);
   } else {
     res.status(405).send(`Method ${req.method} not allowed`);

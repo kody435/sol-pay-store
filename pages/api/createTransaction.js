@@ -16,7 +16,7 @@ import products from "./products.json";
 const usdcAddress = new PublicKey(
   "Gh9ZwEmdLJ8DscKNTkTqPbNwLNNBjuSzaG9Vp2KGtKJr"
 );
-const sellerAddress = "B1aLAAe4vW8nSQCetXnYqJfRxzTjnbooczwkUJAr7yMS";
+const sellerAddress = "STORE_ADDRESS_HERE";
 const sellerPublicKey = new PublicKey(sellerAddress);
 
 const createTransaction = async (req, res) => {

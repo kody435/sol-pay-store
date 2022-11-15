@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Product.module.css";
-import Buy from "./Buy";
+import Buy from "./Buy.js";
 
 export default function Product({ product }) {
   const { id, name, price, description, image_url } = product;
@@ -19,7 +19,6 @@ export default function Product({ product }) {
 
         <div className={styles.product_action}>
           <div className={styles.product_price}>{price} USDC</div>
-          {/* Replace the IPFS component with the Buy component! */}
           <Buy itemID={id} />
         </div>
       </div>
